@@ -1,0 +1,64 @@
+.header {
+width: 100%;
+height: 750px;
+}
+
+.bg-header {
+  background-image: url(../images/bg-header.jpg);
+  width: 100vw;
+  height: 100vh;
+}
+
+.banner-1 {
+  height: 250px;
+
+}
+
+/*info settings*/
+.info {
+  color: $brand-light;
+  padding: 75px 150px;
+}
+
+/*banner settings*/
+.banner {
+  padding: 30px 150px;
+}
+
+.info-1 {
+  height: 550px;
+  background-image: url(../images/info-1-bg.png);
+  color: $brand-light;
+  text-align: center;
+}
+
+.banner-2 {
+  height: 250px;
+}
+
+.info-2 {
+  height: 550px;
+  background-image: url(../images/info-1-bg.png);
+  color: $brand-light;
+  text-align: center;
+}
+
+.banner-3 {
+  height: 250px;
+}
+.info-3 {
+  padding: 75px 150px;
+  color: $brand-dark;
+  height: 550px;
+  background-color: #F8F8F8;
+}
+
+.book {
+  background-image: url(../images/book-bg.png);
+  height: 370px;
+}
+
+.contact {
+  background-image: url(../images/contact-bg.png);
+  height: 456px;
+}
