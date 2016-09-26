@@ -16,43 +16,45 @@ title: Prusik
 </div>
 
 <!-- Info box #1 - WAAROM PRUSIK? -->
-<div class="info info-1">
-  <div class="parent-info">
-    <div class="flex-info">
-      <h3>Waarom Prusik?</h3>
-    </div>
-    <div class="flex-info">
-      <p>
-        Integriteit, discretie en vertrouwen staan hierbij voorop, of er nou op projectbasis wordt gewerkt, op basis van vaste trajecten, op urenbasis of welke combinatie daarvan dan ook. Het gaat om het resultaat en dat is wat Prusik steeds voor ogen heeft.  Het gaat om het resultaat en dat is wat Prusik steeds voor ogen heeft.
-      </p>
-    </div>
-    <div class="flex-info">
-      <p>
-        Prusik richt zich daarbij niet louter op (juridische) vakinhoud maar ook –of juist – op de onderliggende ambities en beweegredenen van haar opdrachtgevers. Doelen, ambities en beweegredenen sluiten zo op elkaar aan en dat geeft betere kansen gestelde doelen ook daadwerkelijk te bereiken.
-      </p>
-    </div>
-    <div class="flex-info">
-      <p>
-        Creëren en binden, dat is wat Prusik drijft. Prusik adviseert over:
-      </p>
-      <p>
-        •   het creëren van business en business concepten. Prusik helpt doelen in kaart te brengen en      (juridische) structuren uit te werken die nodig zijn voor het bereiken daarvan; 
-      </p>
-      <p>
-        •   het binden (eventueel contractueel indien relevant) maar vooral het verbinden van de partijen die      nodig zijn om die doelen te bereiken.
-      </p>
-    </div>
-    <div class="flex-item">
-      <a href=""> <%= image_tag "chevron.png" %></a>
-    </div>
+<div class="info info-1 parent-info">
+  <div class="flex-info">
+    <h3>Waarom Prusik?</h3>
   </div>
+  <div class="flex-info">
+    <p>
+      Integriteit, discretie en vertrouwen staan hierbij voorop, of er nou op projectbasis wordt gewerkt, op basis van vaste trajecten, op urenbasis of welke combinatie daarvan dan ook. Het gaat om het resultaat en dat is wat Prusik steeds voor ogen heeft.  Het gaat om het resultaat en dat is wat Prusik steeds voor ogen heeft.
+    </p>
+  </div>
+  <div class="flex-info">
+    <p>
+      Prusik richt zich daarbij niet louter op (juridische) vakinhoud maar ook –of juist – op de onderliggende ambities en beweegredenen van haar opdrachtgevers. Doelen, ambities en beweegredenen sluiten zo op elkaar aan en dat geeft betere kansen gestelde doelen ook daadwerkelijk te bereiken.
+    </p>
+  </div>
+  <div class="flex-info">
+    <p>
+      Creëren en binden, dat is wat Prusik drijft. Prusik adviseert over:
+    </p>
+    <p>
+      •   het creëren van business en business concepten. Prusik helpt doelen in kaart te brengen en      (juridische) structuren uit te werken die nodig zijn voor het bereiken daarvan; 
+    </p>
+    <p>
+      •   het binden (eventueel contractueel indien relevant) maar vooral het verbinden van de partijen die      nodig zijn om die doelen te bereiken.
+    </p>
+  </div>
+  <div class="flex-item chevron">
+    <a href=""> <%= image_tag "chevron.png" %></a>
+    <%#= image_tag("chevron.png"), :style => 'text-align: center;')%>
+    <%#= image_tag "chevron.png", :class => "chevron" %>
+    <%#= image_tag("../images/chevron.png", class: "chevron") %>
+  </div>
+</div>
 </div>
 
 
 <!-- Banner 2 -->
 <div class="banner banner-2">
   <h4>
-    Advies om te top te bereiken...<br/>...en weer veilig thuis te komen.
+    Advies om de top te bereiken...<br/>...en weer veilig thuis te komen.
   </h4>
 </div>
 
@@ -82,7 +84,7 @@ title: Prusik
       Vrij van vaste kaders brengt Prusik daarbij ogenschijnlijk losstaande elementen met elkaar in verband, waardoor het speelveld verandert en doelen en risico’s ineens vanuit ander perspectief zichtbaar worden. En dat biedt vaak nieuwe mogelijkheden. Prusik werkt voor nationale en internationale ondernemingen en voor ondernemers die vooruit willen en daarbij op zoek zijn naar andere – vaak nog onbekende - routes.
     </p>
   </div>
-  <div class="flex-info">
+  <div class="flex-info chevron">
     <a href=""> <%= image_tag "chevron.png" %></a>
   </div>
 </div>
@@ -93,8 +95,27 @@ title: Prusik
 </div>
 
 <!-- Info box #3   -   WIE -->
-<div class="info-3 parent-info">
-  <div class="flex-info">
+<div class="info-3 wie-parent">
+
+  <div class="wie-item contact-card">
+    <div class="card">
+      <div class="card-item">
+        <%= image_tag "joris-card.png" %>
+      </div>
+      <div class="card-item">
+        <%= image_tag "contact-phone.png" %> | +31 (0)6 55 471 987 
+      </div>
+      <div class="card-item">
+        <%= image_tag "contact-mail.png" %> | Stuur mij een e-mail 
+      </div>
+      <div class="card-item">
+        <%= image_tag "contact-linkedin.png" %> | LinkedIn
+      </div>
+    </div>
+  </div>
+
+
+  <div class="wie-item">
     <h3>
       Wie
     </h3>
@@ -114,9 +135,37 @@ title: Prusik
 </div>
 
 <div class="book">
+  <div class="book-1">
+
+  </div>
 
 </div>
 
 <div class="contact">
+  <div class="contact-parent">
+    <div class="contact-item">
 
+    </div>
+  </div>
+
+  <section>
+    <h3>test</h3>
+    <<form method="POST" action="">
+    <label><span>Your Name</span>
+      <input type="text" name="name"></label>
+      <input type="email" name="email">
+      <textarea name="message"></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </section>
 </div>
+
+
+
+
+
+
+
+
+
+
