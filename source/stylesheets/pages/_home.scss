@@ -1,23 +1,53 @@
+// - responsiveness (e.g. padding werkt wanneer mobile screen)
+// - responsiveness (screen resolution size)
+// - chevrons - how to add transition? transition: all ease 0.3s?
+// ? Vraag mening van Lars > line height mooi zo? -> info boxes
+// - banner 1  (when viewing mobile screen, too little padding or height)
+
 body {
   font-family: Open Sans;
   h3 {
+    border-bottom: 1px solid;
     font-family: Open Sans;
-    text-decoration: underline;
-    text-decoration-color: #EB4E49;
+    // text-decoration: underline;
     padding-bottom: 25px;
+    text-decoration-color: #EB4E49;
     text-align: center;
+  }
+  a {
+    outline:none !important;
   }
 }
 
 .header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 740px;
+  justify-content: center;
   width: 100%;
-  height: 750px;
+  h2 {
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 2.1vmax;
+    justify-content: center;
+    padding-bottom: 225px;
+    text-shadow: 1px 2px 1px #181918;
+    text-align: center;
+    width: 75vw;
+  }
+  img {
+    position: absolute;
+    bottom: -10px;
+  }
 }
 
 .bg-header {
-  background-image: url(../images/bg-header.jpg);
-  width: 100vw;
-  height: 100vh;
+  background-image: url(../images/bg-header5.png);
+  background-position: top;
+  // width: 100vw;
+  // height: 100vh;
 }
 
 
@@ -26,46 +56,77 @@ body {
 .banner {
   // padding-top: 100px;
   text-align: center;
-
+  background-size: cover;
 }
+
 // banners
 .banner-1 {
+  align-items: center;
   background-image: url(../images/banner_2_bg.jpg);
-  height: 450px;
   // padding-left: 10%;
   // padding-right: 10%;
   // padding-top: 100px;
   display: flex;
+  height: 450px;
   justify-content: center;
-  align-items: center;
   h4 {
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.85);
-    width: 70vw;
-    min-height: 8vw;
-    padding-top: 33px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 33px;
+    border-radius: 2pt;
+    display: flex;
+    font-size: 1.2em;
+    justify-content: center;
+    min-height: 7vw;
+    max-height: 30vw;
+    padding: 20px 10px;
+    width: 82vw;
   }
 }
 .banner-2 {
-  background-image: url(../images/banner_1_bg.png);
-  height: 500px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-image: url(../images/banner_gear.jpg);
+  background-size: cover;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  // min-width: 1600px;
   h4 {
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.85);
-    width: 70vw;
+    border-radius: 2pt;
+    display: flex;
+    justify-content: center;
+    min-height: 7vw;
+    max-height: 30vw;
+    padding: 20px 10px;
+    width: 82vw;
+    // padding-top: 33px;
+    // padding-left: 10px;
+    // padding-right: 10px;
+    // padding-bottom: 33px;
+  }
+}
+.banner-3 {
+  align-items: center;
+  background-image: url(../images/banner_1_bg.png);
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  h4 {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 2pt;
+    display: flex;
+    justify-content: center;
     min-height: 8vw;
     padding-top: 33px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 33px;
+    width: 82vw;
   }
-}
-.banner-3 {
-  height: 250px;
 }
 
 /*info settings*/
@@ -73,8 +134,18 @@ body {
   color: $brand-light;
 }
 .chevron{
-text-align: center;
-color: red;
+  color: red;
+  text-align: center;
+  transition: all 500ms ease;
+  margin: 20px 5px;
+  a {
+    transition: all 500ms ease;
+  }
+}
+
+.chev-styling {
+  font-size: 26px;
+  color: white;
 }
 
 // info boxes
@@ -82,86 +153,287 @@ color: red;
   // background-image: url(../images/info-1-bg.png);
   background-color: #F0F5F3;
   color: $brand-dark;
-  min-height: 550px;
   line-height: 26px;
+  min-height: 640px;
   // text-align: center;
 }
 .info-2 {
-  min-height: 550px;
-  background-image: url(../images/info-1-bg.png);
-  color: $brand-light;
-  text-align: center;
+  // background-image: url(../images/info-1-bg.png);
+  background-color: #F0F5F3;
+  color: $brand-dark;
+  min-height: 640px;
+  // text-align: center;
 }
 .info-3 {
-  padding: 75px 150px;
-  color: $brand-dark;
-  min-height: 550px;
   background-color: #F8F8F8;
+  color: $brand-dark;
+  min-height: 640px;
+  padding: 75px 150px;
 }
 
 
 /* Flexbox Homepage*/
 /* Info Parent & Item */
 .parent-info {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  line-height: 28px;
   // padding-top: 60px;
 }
 
 .flex-info {
+  margin-top: 22px;
   width: 70vw;
 }
 
 /* Flex-info for WIE content */
 .wie-parent {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
+  display: flex;
   // flex-direction: column;
+  justify-content: space-around;
+  line-height: 28px;
   padding-top: 60px;
 }
 
 .wie-item {
-  width: 40vw;
+  margin-top: 28px;
+  // width: 51vw;
 }
 
 /* Contact Card & Flex */
+.contact-bottom {
+ display: flex;
+ flex-direction: column;
+ padding: 10px;
+ div {
+  color: $brand-dark;
+  margin: 2px 17px;
+  text-align: left;
+  width: 200px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+}
+
 .contact-card {
-  width: 275px;
-  height: 360px;
+  align-self: flex-start;
   background-color: #D8DDDE;
+  height: 390px;
+  margin-right: 95px;
+  margin-top: 106px;
+  width: 245px;
+  a {
+    color: $brand-dark;
+  }
+}
+
+.contact-image {
+  width: 275px;
 }
 
 
 .card {
-  display: flex;
   align-items: stretch;
+  display: flex;
   flex-direction: column;
 }
 
 .card-item {
-  flex-grow: 1;
+  align-items: center;
+  display: flex;
+  // flex-grow: 1;
+  justify-content: space-between;
 }
 
 
 /* additional */
 .book {
-  background-image: url(../images/book-bg.png);
-  height: 370px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-image: url(../images/book-bg.png);
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+  justify-content: center;
 }
 
 .book-1 {
-  background-color: #EBEBEB;
-  width: 7  80px;
-  height: 250px;
+  background-color: rgba(255, 255, 255, 0.75);
+  // border: 2px solid;
+  display: flex;
+  margin-top: 30px;
+  width: 90vw;
+}
+.book-2 {
+  background-color: rgba(255, 255, 255, 0.75);
+  // border: 2px solid;
+  display: flex;
+  margin: 30px 0px;
+  width: 90vw;
 }
 
+.book-left {
+  height: auto;
+  padding: 3.5%;
+  width: 70%;
+  p {
+    font-weight: 200;
+    line-height: 24px;
+  }
+}
+
+.book-right {
+  padding: 2%;
+}
+
+#book-link {
+  color: inherit;
+}
+
+#book-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Contact form div
 .contact {
   background-image: url(../images/contact-bg.png);
-  height: 456px;
+  // background-position: right;
+  // background-repeat: repeat;
+  width: auto;
+  height: 475px;
 }
+
+.contact-bericht {
+  background-color: #E7E7E7;
+  border: none;
+  border-radius: 2pt;
+  height: 91%;
+  margin: 10px;
+  padding: 10px 10px;
+  width: 500px;
+}
+
+
+.form-actions {
+  // border: 1px solid blue;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  align-items: flex-start;
+  // border: 2px solid red;
+  display: flex;
+  font-size: 13px;
+  height: 211px;
+  width: 100%;
+  // background-color: #8B8B8B;
+
+  input {
+    background-color: #E7E7E7;
+    border: none;
+    border-radius: 2px;
+    margin: 10px;
+    padding: 3px;
+    width: auto;
+  }
+}
+
+.contact-item {
+
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  input {
+   height: 50px;
+   margin-bottom: 9px;
+   padding-left: 10px;
+   padding-top: 5px;
+ }
+}
+
+.contact-parent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 40vw;
+  width: 95vw;
+  h4 {
+   color: $brand-light;
+   padding: 15px 0px 0px 15px;
+   text-align: center;
+ }
+}
+
+.contact-verstuur {
+  border: none;
+  border-radius: 2pt;
+  background: #E7E7E7;
+  color: #DFE5E3;
+  color: inherit;
+  font-family: Open Sans;
+  font-size: 13px;
+  margin: 9px;
+  padding: 13px;
+  transition: all 0.5s;
+}
+
+.contact-verstuur:hover {
+  background-color: #D4D4D4;
+}
+
+.bottom-wrapper {
+  background-color: #F0F5F3;
+  height: 4vw;
+}
+
+@media all and (max-width: 479px) {
+
+  .book {display:none;}
+
+}
+
+@media all and (max-width: 800px) {
+  .contact-card {display:none;}
+  .wie-item {
+    width: 70vw;
+  }
+}
+
+@media all and (max-width: 1250px) {
+  .header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 740px;
+    justify-content: center;
+    width: 100%;
+    h2 {
+      align-items: center;
+      color: white;
+      display: flex;
+      font-size: 22px;
+      justify-content: center;
+      line-height: 28px;
+      padding-bottom: 225px;
+      text-shadow: 1px 2px 1px #181918;
+      text-align: center;
+      width: 75vw;
+    }
+    img {
+      position: absolute;
+      bottom: -10px;
+    }
+  }
+}
+

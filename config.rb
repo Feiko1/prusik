@@ -18,6 +18,7 @@ activate :autoprefixer
 #
 # With no layout
 # page "/path/to/file.html", :layout => false
+  page "/source/_boeken.html.erb", :layout => "boeken"
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
