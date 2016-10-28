@@ -259,8 +259,11 @@ a:hover {
   background-image: url(../images/book-bg.png);
   display: flex;
   flex-direction: column;
-  min-height: auto;
+  min-height: 700px;
   justify-content: center;
+  &active {
+    text-decoration: none;
+  }
 }
 
 .book-1 {
