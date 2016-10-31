@@ -62,7 +62,7 @@ body {
 // banners
 .banner-1 {
   align-items: center;
-  background-image: url(../images/banner_1_bg.jpg);
+  background-image: url(../images/banner_1_bg_peru_crop.jpg);
   background-position: center;
   // padding-left: 10%;
   // padding-right: 10%;
@@ -109,7 +109,7 @@ body {
 }
 .banner-3 {
   align-items: center;
-  background-image: url(../images/banner_1_bg.png);
+  background-image: url(../images/banner_1_bg.jpg);
   background-position: top;
   background-size: cover;
   display: flex;
@@ -263,6 +263,9 @@ a:hover {
   min-height: 700px;
   justify-content: center;
   &active {
+    text-decoration: none;
+  }
+  a:focus {
     text-decoration: none;
   }
 }
